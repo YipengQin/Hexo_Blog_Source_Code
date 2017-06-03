@@ -1,0 +1,14 @@
+<%
+    var tableOfContents = null;
+    var postContent = post.content;
+%>
+<article class="post" itemscope itemType="http://schema.org/BlogPosting">
+
+    <div class="post-content markdown" itemprop="articleBody">
+        <div class="main-content-wrap">
+            <%- postContent %>
+            <%- partial('post/gallery') %>
+        </div>
+    </div>
+</article>
+
